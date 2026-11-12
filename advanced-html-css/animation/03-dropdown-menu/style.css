@@ -18,15 +18,28 @@
   margin: 0;
   background-color: rgb(99, 97, 97);
 
-  display: none;
+  display: block;
+transform: scaleY(0);
+transform-origin: top;
 }
 
 ul.dropdown-menu li:hover {
   background: rgb(47, 46, 46);
 }
-
 .visible {
-  display: block;
+  animation: expand 0.5s ease forwards;
 }
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
 
+  80% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
 

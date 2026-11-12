@@ -9,17 +9,20 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Make the modal a flex container to place the icon and right-side content side-by-side */
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 30px;
+  display: flex;
+  gap: 20px; /* Clean spacing between icon and content */
 }
 
 .icon {
@@ -29,18 +32,37 @@ body {
   background: lavender;
   width: 42px;
   height: 42px;
+  min-width: 42px; /* Prevents the icon from squishing */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Right-side wrapper to stack header, text, and buttons vertically */
+.modal-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
 .close-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
-  font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   height: 24px;
   width: 24px;
   display: flex;
@@ -48,12 +70,28 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  cursor: pointer;
+}
+
+.text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  font-family: inherit;
+  font-weight: 500;
 }
 
 button.continue {

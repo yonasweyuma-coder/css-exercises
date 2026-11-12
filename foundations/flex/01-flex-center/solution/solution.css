@@ -18,7 +18,7 @@
 
 /* disclaimer: duplicating the `.container` selector here isn't best practice.
 In your solution you probably put it right inside the existing `.container`,
-which _is_ the best practice. 
+which _is_ the best practice.
 
 We separated it out here to make it extra clear what has changed. */
 

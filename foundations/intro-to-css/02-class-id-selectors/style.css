@@ -1,1 +1,11 @@
 /* Add CSS Styling */
+p{
+    background-color: rgb(255, 193, 203);
+
+}
+.blue{
+    color: blue;
+}
+.green{
+    background-color: rgb(67, 247, 67);
+}

@@ -24,3 +24,55 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+.header{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-links,
+.right-links{
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;   /* This deletes the browser's secret left padding! */
+  margin: 0;
+
+}
+a{
+  color: #666060;
+  text-decoration: none;
+}
+body{
+  flex-direction: column;
+  display: flex;
+
+  justify-content: space-between;
+}
+.footer{
+  background-color: rgb(241, 234, 234);
+}
+.content{
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Gives a clean 20px buffer on BOTH the left and right edges */
+}
+}
+.right-links{
+  margin: 20px;
+}
+.left-links{
+  margin: 20px;
+}
